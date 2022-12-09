@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.loader-page {
+  background-color:  #F5F5F5;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.card {
+   width: 1138px;
+   height: 292px;
+   padding: 20px;
+   border-top: 6px solid black;
+   border-bottom: 6px solid black;
+   border-left: 6px solid black;
+   border-radius: 100px 0  0 100px;
+   position: absolute;
+   top: 30%;
+   right: 0;
+
+   display: flex;
+   background-color: black;
+}
+
+.dots {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
+  animation: blink 2.5s infinite both;
+  
+}
+
+.quote {
+  width: 748px;
+  height: 243px;
+  font-size: 40px;
+  color: white;
+  padding: 10px 20px;
+}
+
+
+.dots div:nth-child(2) {
+   animation-delay: .5s;
+}
+
+.dots div:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: .2
+  }
+
+   20% {
+    opacity: .4
+  }
+
+   30% {
+    opacity: .6
+  }
+
+   40% {
+    opacity: .8
+  }
+  50% {
+    opacity: 1;
+  }
+
+   60% {
+    opacity: .8
+  }
+
+   70% {
+    opacity: .6
+  }
+
+   80% {
+    opacity: .4
+  }
+
+   90% {
+    opacity: .2
+  }
+  100% {
+    opacity: 0;
+  }
+}
