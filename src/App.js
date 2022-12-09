@@ -26,7 +26,7 @@ function App() {
   const length = quotes.length;
 
   const autoPlay = true;
-  const timeInterval = 5000;
+  const timeInterval = 3000;
   let displayInterval;
 
   const nextQuote = () => {
